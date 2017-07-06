@@ -43,19 +43,6 @@ h3
 
 /*https://www.w3schools.com/css/css3_shadows.asp*/
 
-section
-{
-	margin: 15px;
-}
-section.polaroid 
-{
-	width: 780px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto; 
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 div
 {
 	margin: 15px;
@@ -84,10 +71,6 @@ div.polaroid
 	transform: scale(1.1);
 }
 
-section.container
-{	
-	padding: 10px;	
-}
 div.container 
 {
   padding: 10px;
