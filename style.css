@@ -1,11 +1,11 @@
 @font-face {
-	font-family: 'OpenSans-Light';
-	src: url('OpenSans-Light.ttf');
+	font-family: 'BodoniXT';
+	src: url('BodoniXT.ttf');
 }
 
 body{
 	background-color: white;
-	color: grey;
+	color: black;
 	text-align: center;
 }
 
@@ -41,9 +41,11 @@ p {
 p.citation {
 	font-size: 24px;
 }
+
 h1 {
 	font-size: 100px;
-	font-family: 'OpenSans-Light';
+	font-family: 'BodoniXT';
+	text-decoration: underline;
 }
 
 h3 {
