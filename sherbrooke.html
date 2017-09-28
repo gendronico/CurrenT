@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <title>CurrenT</title>
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <title>CurrenT</title>
+</head>
 	
-	<body>
+<body>
 		
 		<h1>CurrenT - Album Sherbrooke</h1>
 		
 				
-		<nav>
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="photographie.html">Photographie</a></li>
-				<li><a href="nouvelles.html">Nouvelles</a></li>
-			</ul>
-		</nav>
+		<div class="topnav" id="myTopnav">
+			<a class="material-icons" href="index.html" style="font-size:20px;">home</a>
+			
+			<a href="photographie.html">Photographie</a>
+			<a href="nouvelles.html">Nouvelles</a>
+			<a href="https://www.instagram.com/nicognd/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
 		
 		<p class="citation"> Sherbrooke, Québec - 2017 </p>
 
 		<div class="block">
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 1 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.1</p>
 				</div>
 			</div>
@@ -32,6 +37,7 @@
 		<div class="block">		
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 2 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.2</p>
 				</div>
 			</div>
@@ -40,6 +46,7 @@
 		<div class="block">
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 3 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.3</p>
 				</div>
 			</div>
@@ -48,6 +55,7 @@
 		<div class="block">		
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 4 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.4</p>
 				</div>
 			</div>
@@ -56,6 +64,7 @@
 		<div class="block">
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 5 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.5</p>
 				</div>
 			</div>
@@ -64,6 +73,7 @@
 		<div class="block">
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 6 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.6</p>
 				</div>
 			</div>
@@ -72,6 +82,7 @@
 		<div class="block">
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 7 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.7</p>
 				</div>
 			</div>
@@ -80,10 +91,22 @@
 		<div class="block">
 			<div class="polaroid">
 				<img src="Sherbrooke/Sherbrooke - 8 - Resized.jpg" alt="Sherbrooke" style="width:100%">
+				<div class="container">
 					<p>Sherbrooke, 2017, No.8</p>
 				</div>
 			</div>
 		</div>
 		
-    </body>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive"; <!-- Espace devant responsive est important -->
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+		
+</body>
 </html>

@@ -3,28 +3,42 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
         <title>CurrenT</title>
     </head>
 
-    <body>
+<body>
+	<h1><u>CurrenT</u></h1>
 		
-		<h1><u>CurrenT</u></h1>
+	<p class="citation"> « En art comme en amour, l'instinct suffit. » </p>
 		
-		<p class="citation"> « En art comme en amour, l'instinct suffit. » </p>
+	<div class="topnav" id="myTopnav">
+			<a class="material-icons" href="index.html" style="font-size:20px;">home</a>
+			
+			<a href="photographie.html">Photographie</a>
+			<a href="nouvelles.html">Nouvelles</a>
+			<a href="https://www.instagram.com/nicognd/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+			
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
 		
-		<nav>
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="photographie.html">Photographie</a></li>
-				<li><a href="nouvelles.html">Nouvelles</a></li>
-			</ul>
-		</nav>
-		
+	<div class="wrapper">	
 		<h2>Mot de l'artiste</h2>
 		<p class="intro"> J'ai décidé de créer ce siteweb afin de partager ma passion : les arts.<br> 
-			Je suis étudiant à l'Université de Sherbrooke.<br>
+			Je suis étudiant en génie électrique à l'Université de Sherbrooke.<br>
 			Je prévois déposer régulièrement mes photos, mes projets et plus.<br>
-			Ce siteweb est issu du code de mon cru et reste pour le moment en construction.<br>
-			Nicolas.</p>
-    </body>
+			Ce siteweb est issu du code de mon cru et reste pour le moment en construction.<br>Nicolas.</p>
+	</div>	
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive"; <!-- Espace devant responsive est important -->
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
 </html>
